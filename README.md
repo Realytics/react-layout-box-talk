@@ -1,2 +1,3 @@
 # react-layout-box-talk
-Slide of my talk about LayoutBox
+
+Slides of my talk about LayoutBox

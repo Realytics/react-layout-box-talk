@@ -11,7 +11,10 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Image,
+  Layout,
+  Fill
 } from "spectacle";
 
 // Import image preloader util
@@ -26,10 +29,9 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
+  twitter: require("../assets/twitter.png"),
+  gobelins: require("../assets/gobelins.svg"),
+  realytics: require("../assets/realytics.svg")
 };
 
 preloader(images);
@@ -47,32 +49,44 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="primary">
+      <Deck transition={["slide"]} transitionDuration={500} theme={theme}>
+        <Slide bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            Layout Box
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
+            Connaitre la taille d'un élément
+          </Text>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+             avant même le premier render
+          </Text>
+          <Text margin="10px 0 0" textColor="quartenary" size={2}>
+            Meetup React &amp; React Naive
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
+          <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>
+          <Text size={3} textColor="secondary">Etienne Deladonchamps</Text>
+          <Text size={3} textColor="secondary">
+            <Image src={images.twitter} height={50} margin={10} style={{ verticalAlign: "middle" }} />
+            <span style={{ verticalAlign: "middle" }}>@EtienneDldc</span>
+          </Text>
+          <Layout>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                <Image src={images.gobelins} width="100%" />
+              </Heading>
+            </Fill>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                <Image src={images.realytics} width="100%" />
+              </Heading>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+          <Heading size={2} textColor="secondary" margin={50} caps>Problematique</Heading>
+          
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>

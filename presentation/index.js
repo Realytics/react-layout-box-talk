@@ -73,12 +73,12 @@ export default class Presentation extends React.Component {
           </Text>
           <Layout>
             <Fill>
-              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+              <Heading size={4} caps textColor="secondary" margin={10}>
                 <Image src={images.gobelins} width="100%" />
               </Heading>
             </Fill>
             <Fill>
-              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+              <Heading size={4} caps textColor="secondary" margin={10}>
                 <Image src={images.realytics} width="100%" />
               </Heading>
             </Fill>
@@ -87,13 +87,7 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={2} textColor="secondary" margin={50} caps>Problematique</Heading>
           
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
-        </Slide>
+        </Slide>        
       </Deck>
     );
   }

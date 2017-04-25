@@ -3,13 +3,8 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
   Deck,
   Heading,
-  ListItem,
-  List,
-  Quote,
   Slide,
   Text,
   Image,
@@ -58,16 +53,24 @@ export default class Presentation extends React.Component {
             Connaitre la taille d'un élément
           </Text>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-             avant même le premier render
+             avant le premier render
           </Text>
           <Text margin="10px 0 0" textColor="quartenary" size={2}>
             Meetup React &amp; React Naive
           </Text>
         </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Heading size={3} fit margin={50} textColor="primary">Transférer le controle du Layout</Heading>
+          <Heading size={2} margin={50} textColor="secondary" caps>CSS ⇒ JS</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Heading size={3} margin={50} textColor="primary" caps>Layout Box</Heading>
+          <Heading size={4} margin={50} textColor="secondary" caps>demo</Heading>
+        </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>
           <Text size={3} textColor="secondary">Etienne Deladonchamps</Text>
-          <Text size={3} textColor="secondary">
+          <Text size={3} textColor="secondary" margin={[0, 0, 0, 30]}>
             <Image src={images.twitter} height={50} margin={10} style={{ verticalAlign: "middle" }} />
             <span style={{ verticalAlign: "middle" }}>@EtienneDldc</span>
           </Text>
@@ -84,10 +87,6 @@ export default class Presentation extends React.Component {
             </Fill>
           </Layout>
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={2} textColor="secondary" margin={50} caps>Problematique</Heading>
-          
-        </Slide>        
       </Deck>
     );
   }

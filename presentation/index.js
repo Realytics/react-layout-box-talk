@@ -10,7 +10,8 @@ import {
   Image,
   Layout,
   Appear,
-  CodePane,
+  Code,
+  // CodePane,
   Fill
 } from "spectacle";
 
@@ -29,7 +30,9 @@ const images = {
   twitter: require("../assets/twitter.png"),
   gobelins: require("../assets/gobelins.svg"),
   realytics: require("../assets/realytics.svg"),
-  magic: require("../assets/magic.gif")
+  magic: require("../assets/magic.gif"),
+  context1: require("../assets/context-1.png"),
+  context2: require("../assets/context-2.png")
 };
 
 preloader(images);
@@ -78,21 +81,33 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" fit>React Context API</Heading>
+          <Appear>
+            <Heading size={4} margin={50} textColor="secondary" caps>Very short demo ®</Heading>
+          </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
-          <CodePane
-            lang="jsx"
-            source={require("raw-loader!../assets/code/context-01.txt")}
-            style={{ height: "620px", overflowY: "auto", fontSize: "1.5rem" }}
-          />
+          <Heading size={3} margin={50} textColor="primary">Warning !</Heading>
+          <Appear>
+            <Text margin={50} textColor="secondary" lineHeight={1.3}>
+              Les mise à jour du context sont bloqués par <Code>ShouldComponentUpdate</Code>
+              </Text>
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
+          <Heading size={3} margin={50} textColor="tertiary" fit>Context Update & SCU</Heading>
+          <Appear>
+            <Heading size={5} margin={50} textColor="secondary" caps>Very short demo ® (Bis)</Heading>
+          </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
-          <CodePane
-            lang="jsx"
-            source={require("raw-loader!../assets/code/context-02.txt")}
-            style={{ height: "620px", overflowY: "auto", fontSize: "1.5rem" }}
-          />
+          <Image src={images.context1} fit />
+          <Text style={{ fontSize: "2rem" }}>Crédit @mweststrate</Text>
         </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.context2} fit />
+          <Text style={{ fontSize: "2rem" }}>Crédit @mweststrate</Text>
+        </Slide>
+
 
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>

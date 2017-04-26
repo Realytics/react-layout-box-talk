@@ -1,0 +1,32 @@
+const Button = (props, context) => (
+  <button style={{ background: this.context.color }}>
+    {this.props.children}
+  </button>
+);
+
+Button.contextTypes = {
+  color: PropTypes.string
+};
+
+const Message = (props) => (
+  <div>
+    {this.props.text} <Button>Delete</Button>
+  </div>
+);
+
+class MessageList extends React.Component {
+  getChildContext() {
+    return { color: "purple" };
+  }
+
+  render() {
+    const children = this.props.messages.map((message) =>
+      <Message text={message.text} />
+    );
+    return <div>{children}</div>;
+  }
+}
+
+MessageList.childContextTypes = {
+  color: PropTypes.string
+};

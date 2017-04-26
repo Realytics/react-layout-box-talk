@@ -9,6 +9,8 @@ import {
   Text,
   Image,
   Layout,
+  Appear,
+  CodePane,
   Fill
 } from "spectacle";
 
@@ -26,7 +28,8 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   twitter: require("../assets/twitter.png"),
   gobelins: require("../assets/gobelins.svg"),
-  realytics: require("../assets/realytics.svg")
+  realytics: require("../assets/realytics.svg"),
+  magic: require("../assets/magic.gif")
 };
 
 preloader(images);
@@ -44,8 +47,8 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["slide"]} transitionDuration={500} theme={theme}>
-        <Slide bgColor="primary">
+      <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
+        <Slide transition={["fade", "slide"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Layout Box
           </Heading>
@@ -63,10 +66,34 @@ export default class Presentation extends React.Component {
           <Heading size={3} fit margin={50} textColor="primary">Transférer le controle du Layout</Heading>
           <Heading size={2} margin={50} textColor="secondary" caps>CSS ⇒ JS</Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
-          <Heading size={3} margin={50} textColor="primary" caps>Layout Box</Heading>
+        <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
+          <Heading size={3} margin={50} textColor="tertiary" caps>Layout Box</Heading>
           <Heading size={4} margin={50} textColor="secondary" caps>demo</Heading>
         </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Heading size={3} margin={50} textColor="primary" fit>Comment ça marche ?</Heading>
+          <Appear>
+            <Image src={images.magic} width={350} height={350} style={{ border: "5px solid white" }} />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
+          <Heading size={3} margin={50} textColor="tertiary" fit>React Context API</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <CodePane
+            lang="jsx"
+            source={require("raw-loader!../assets/code/context-01.txt")}
+            style={{ height: "620px", overflowY: "auto", fontSize: "1.5rem" }}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <CodePane
+            lang="jsx"
+            source={require("raw-loader!../assets/code/context-02.txt")}
+            style={{ height: "620px", overflowY: "auto", fontSize: "1.5rem" }}
+          />
+        </Slide>
+
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>
           <Text size={3} textColor="secondary">Etienne Deladonchamps</Text>

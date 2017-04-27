@@ -75,9 +75,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
           <Heading size={3} margin={50} textColor="primary" fit>Comment ça marche ?</Heading>
-          <Appear>
-            <Image src={images.magic} width={350} height={350} style={{ border: "5px solid white" }} />
-          </Appear>
+          <Image src={images.magic} width={350} height={350} style={{ border: "5px solid white" }} />
         </Slide>
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" fit>React Context API</Heading>

@@ -12,7 +12,10 @@ import {
   Appear,
   Code,
   // CodePane,
-  Fill
+  Fill,
+  Quote,
+  BlockQuote,
+  Cite
 } from "spectacle";
 
 // Import image preloader util
@@ -80,6 +83,18 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" fit>React Context API</Heading>
           <Appear>
+            <BlockQuote>
+              <Quote>
+                <Text textColor="secondary" textSize={30} lineHeight={1.4} style={{ fontWeight: 200 }}>
+                  "In some cases, you want to pass data through the component tree without having to pass the props down manually at every level. You can do this directly in React with the powerful "context" API."
+                </Text>
+              </Quote>
+              <Cite>
+                React Doc
+              </Cite>
+            </BlockQuote>
+          </Appear>
+          <Appear>
             <Heading size={4} margin={50} textColor="secondary" caps>Very short demo ®</Heading>
           </Appear>
         </Slide>
@@ -94,12 +109,18 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" fit>Context Update & SCU</Heading>
           <Appear>
-            <Heading size={5} margin={50} textColor="secondary" caps>Very short demo ® (Bis)</Heading>
+            <Heading size={5} margin={50} textColor="secondary" caps>Very short demo ®</Heading>
           </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
           <Image src={images.context1} fit />
           <Text style={{ fontSize: "2rem" }}>Crédit @mweststrate</Text>
+        </Slide>
+        <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
+          <Heading size={3} margin={50} textColor="tertiary" fit>Context + Store = 🎉</Heading>
+          <Appear>
+            <Heading size={5} margin={50} textColor="secondary" caps>Very short demo ®</Heading>
+          </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
           <Image src={images.context2} fit />

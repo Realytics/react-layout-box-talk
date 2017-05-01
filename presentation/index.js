@@ -154,8 +154,8 @@ export default class Presentation extends React.Component {
             https://github.com/etienne-dldc/react-layout-box-demo
           </Link>
           <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >Slides</Text>
-          <Link textSize={20} href="http://etienne-dldc.github.io/react-layout-box-talk">
-            http://etienne-dldc.github.io/react-layout-box-talk
+          <Link textSize={20} href="http://layoutbox-talk.surge.sh/">
+            http://layoutbox-talk.surge.sh/
           </Link>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">

@@ -15,7 +15,10 @@ import {
   Fill,
   Quote,
   BlockQuote,
-  Cite
+  Cite,
+  Link,
+  List,
+  ListItem
 } from "spectacle";
 
 // Import image preloader util
@@ -74,7 +77,9 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" caps>Layout Box</Heading>
-          <Heading size={4} margin={50} textColor="secondary" caps>demo</Heading>
+          <Appear>
+            <Heading size={4} margin={50} textColor="secondary" caps>demo</Heading>
+          </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
           <Heading size={3} margin={50} textColor="primary" fit>Comment ça marche ?</Heading>
@@ -126,8 +131,33 @@ export default class Presentation extends React.Component {
           <Image src={images.context2} fit />
           <Text style={{ fontSize: "2rem" }}>Crédit @mweststrate</Text>
         </Slide>
-
-
+        <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
+          <Heading size={3} margin={50} textColor="tertiary" fit>Layout Box</Heading>
+          <Appear>
+            <Text textSize={32} margin={20} textColor="secondary">LayoutContainer ⇒ layoutStore</Text>
+          </Appear>
+          <Appear>
+            <Text textSize={32} margin={20} textColor="secondary"> parentLayoutStore ⇒ LayoutBox ⇒ layoutStore</Text>
+          </Appear>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >How to handle React context in a reliable way.</Text>
+          <Link textSize={20} href="https://medium.com/react-ecosystem/how-to-handle-react-context-a7592dfdcbc">
+            https://medium.com/react-ecosystem/how-to-handle-react-context-a7592dfdcbc
+          </Link>
+          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >How to safely use React context</Text>
+          <Link textSize={20} href="https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076">
+            https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076
+          </Link>
+          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >LayoutBox demo</Text>
+          <Link textSize={20} href="https://github.com/etienne-dldc/react-layout-box-demo">
+            https://github.com/etienne-dldc/react-layout-box-demo
+          </Link>
+          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >Slides</Text>
+          <Link textSize={20} href="http://etienne-dldc.github.io/react-layout-box-talk">
+            http://etienne-dldc.github.io/react-layout-box-talk
+          </Link>
+        </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>
           <Text size={3} textColor="secondary">Etienne Deladonchamps</Text>

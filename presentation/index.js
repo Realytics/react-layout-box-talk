@@ -150,8 +150,8 @@ export default class Presentation extends React.Component {
             https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076
           </Link>
           <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >LayoutBox demo</Text>
-          <Link textSize={20} href="https://github.com/etienne-dldc/react-layout-box-demo">
-            https://github.com/etienne-dldc/react-layout-box-demo
+          <Link textSize={20} href="https://github.com/Realytics/react-layout-box-demo">
+            https://github.com/Realytics/react-layout-box-demo
           </Link>
           <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >Slides</Text>
           <Link textSize={20} href="http://layoutbox-talk.surge.sh/">

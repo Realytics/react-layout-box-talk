@@ -16,9 +16,7 @@ import {
   Quote,
   BlockQuote,
   Cite,
-  Link,
-  List,
-  ListItem
+  Link
 } from "spectacle";
 
 // Import image preloader util
@@ -36,6 +34,7 @@ const images = {
   twitter: require("../assets/twitter.png"),
   gobelins: require("../assets/gobelins.svg"),
   realytics: require("../assets/realytics.svg"),
+  realyticsColor: require("../assets/realytics-color.svg"),
   magic: require("../assets/magic.gif"),
   context1: require("../assets/context-1.png"),
   context2: require("../assets/context-2.png")
@@ -70,6 +69,34 @@ export default class Presentation extends React.Component {
           <Text margin="10px 0 0" textColor="quartenary" size={2}>
             Meetup React &amp; React Naive
           </Text>
+          <Heading size={4} caps textColor="secondary" margin="100px 0 0 0">
+            <Image src={images.realyticsColor} width="50%" />
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>
+          <Text size={3} textColor="secondary">Etienne Deladonchamps</Text>
+          <Text textSize={30} textColor="secondary" margin={[0, 0, 0, 30]}>
+            <Link href="https://twitter.com/EtienneDldc">twitter/@EtienneDldc</Link> - <Link href="https://github.com/etienne-dldc">github/etienne-dldc</Link>
+          </Text>
+          <Layout>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" margin={10}>
+                <Image src={images.gobelins} width="100%" />
+              </Heading>
+            </Fill>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" margin={10}>
+                <Image src={images.realytics} width="100%" />
+              </Heading>
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide>
+          <Image src={images.realyticsColor} width="100%" />
+          <Heading size={4} fit textColor="#1F8DBA">
+            Leader de convergence TV-Digital
+          </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
           <Heading size={3} fit margin={50} textColor="primary">Transférer le controle du Layout</Heading>
@@ -82,11 +109,11 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
-          <Heading size={3} margin={50} textColor="primary" fit>Comment ça marche ?</Heading>
+          <Heading size={3} margin={50} textColor="primary" fit>Comment ça marche ? 🤔</Heading>
           <Image src={images.magic} width={350} height={350} style={{ border: "5px solid white" }} />
         </Slide>
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
-          <Heading size={3} margin={50} textColor="tertiary" fit>React Context API</Heading>
+          <Heading size={3} margin={50} textColor="tertiary" fit>React Context API 💯</Heading>
           <Appear>
             <BlockQuote>
               <Quote>
@@ -104,7 +131,7 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
-          <Heading size={3} margin={50} textColor="primary">Warning !</Heading>
+          <Heading size={3} margin={50} textColor="primary">Warning ⚠️</Heading>
           <Appear>
             <Text margin={50} textColor="secondary" lineHeight={1.3}>
               Les mise à jour du context sont bloqués par <Code>ShouldComponentUpdate</Code>
@@ -112,7 +139,7 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
-          <Heading size={3} margin={50} textColor="tertiary" fit>Context Update & SCU</Heading>
+          <Heading size={3} margin={50} textColor="tertiary" fit>Context Update & SCU = 🚫</Heading>
           <Appear>
             <Heading size={5} margin={50} textColor="secondary" caps>Very short demo ®</Heading>
           </Appear>
@@ -134,6 +161,9 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" fit>Layout Box</Heading>
           <Appear>
+            <Text textSize={32} margin={20} textColor="secondary">layoutStore(layout)</Text>
+          </Appear>
+          <Appear>
             <Text textSize={32} margin={20} textColor="secondary">LayoutContainer ⇒ layoutStore</Text>
           </Appear>
           <Appear>
@@ -141,6 +171,14 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
+          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >Slides</Text>
+          <Link textSize={20} href="http://layoutbox-talk.surge.sh/">
+            http://layoutbox-talk.surge.sh/
+          </Link>
+          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >LayoutBox demo</Text>
+          <Link textSize={20} href="https://github.com/Realytics/react-layout-box-demo">
+            https://github.com/Realytics/react-layout-box-demo
+          </Link>
           <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >How to handle React context in a reliable way.</Text>
           <Link textSize={20} href="https://medium.com/react-ecosystem/how-to-handle-react-context-a7592dfdcbc">
             https://medium.com/react-ecosystem/how-to-handle-react-context-a7592dfdcbc
@@ -149,34 +187,26 @@ export default class Presentation extends React.Component {
           <Link textSize={20} href="https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076">
             https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076
           </Link>
-          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >LayoutBox demo</Text>
-          <Link textSize={20} href="https://github.com/Realytics/react-layout-box-demo">
-            https://github.com/Realytics/react-layout-box-demo
-          </Link>
-          <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >Slides</Text>
-          <Link textSize={20} href="http://layoutbox-talk.surge.sh/">
-            http://layoutbox-talk.surge.sh/
-          </Link>
+        </Slide>
+        <Slide>
+          <Image src={images.realyticsColor} width="80%" />
+          <Heading size={4} textColor="#1F8DBA" margin={60}>
+            We are hiring ! 🖥
+          </Heading>
+          <Text margin={30} textSize={30}>
+            <Link href="https://www.realytics.io/jobs/">www.realytics.io/jobs</Link>
+          </Text>
+          <Text margin={30} textSize={30}>
+            <Link href="mailto:jobs@realytics.io">jobs@realytics.io</Link>
+          </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>
-          <Text size={3} textColor="secondary">Etienne Deladonchamps</Text>
-          <Text size={3} textColor="secondary" margin={[0, 0, 0, 30]}>
-            <Image src={images.twitter} height={50} margin={10} style={{ verticalAlign: "middle" }} />
-            <span style={{ verticalAlign: "middle" }}>@EtienneDldc</span>
-          </Text>
-          <Layout>
-            <Fill>
-              <Heading size={4} caps textColor="secondary" margin={10}>
-                <Image src={images.gobelins} width="100%" />
-              </Heading>
-            </Fill>
-            <Fill>
-              <Heading size={4} caps textColor="secondary" margin={10}>
-                <Image src={images.realytics} width="100%" />
-              </Heading>
-            </Fill>
-          </Layout>
+          <Heading size={1} textColor="primary" caps margin={30}>
+            Merci !
+          </Heading>
+          <Heading size={4} textColor="secondary">
+            Questions ?
+          </Heading>
         </Slide>
       </Deck>
     );

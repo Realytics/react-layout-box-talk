@@ -38,7 +38,11 @@ const images = {
   illu1: require("../assets/1-Props.svg"),
   illu2: require("../assets/2-Context.svg"),
   illu3: require("../assets/3-Context-SCU.svg"),
-  illu4: require("../assets/4-Store.svg")
+  illu4: require("../assets/4-Store.svg"),
+  illu5: require("../assets/5-LayoutBox.svg"),
+  illu6: require("../assets/6-LayoutBox.svg"),
+  illu7: require("../assets/7-LayoutBox.svg"),
+  illu8: require("../assets/8-LayoutBox.svg")
 };
 
 preloader(images);
@@ -172,14 +176,20 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" fit>Layout Box</Heading>
           <Appear>
-            <Text textSize={32} margin={20} textColor="secondary">layoutStore(layout)</Text>
+            <Text textSize={32} margin={20} textColor="secondary">LayoutStore (layout)</Text>
           </Appear>
-          <Appear>
-            <Text textSize={32} margin={20} textColor="secondary">LayoutContainer ⇒ layoutStore</Text>
-          </Appear>
-          <Appear>
-            <Text textSize={32} margin={20} textColor="secondary"> parentLayoutStore ⇒ LayoutBox ⇒ layoutStore</Text>
-          </Appear>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.illu5} fit bgColor="white" style={{ borderRadius: 10 }} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.illu6} fit bgColor="white" style={{ borderRadius: 10 }} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.illu7} fit bgColor="white" style={{ borderRadius: 10 }} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.illu8} fit bgColor="white" style={{ borderRadius: 10 }} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Text textColor="primary" textSize={45} lineHeight={1.4} margin="20px 0 0 0" >Slides</Text>

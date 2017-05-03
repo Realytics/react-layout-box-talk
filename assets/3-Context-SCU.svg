@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="510px" height="520px" viewBox="0 0 510 520" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>3-Context-SCU</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L500,0 L500,800 L0,800 L0,0 Z M470,120 L110,120 L110,300 L470,300 L470,120 Z M470,520 L110,520 L110,700 L470,700 L470,520 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3-Context-SCU">
+            <g id="Compo" transform="translate(20.000000, 20.000000)">
+                <rect id="Rectangle" fill="#ED5454" x="0" y="0" width="300" height="80" rx="6"></rect>
+                <text id="MessageList" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                    <tspan x="62.3715797" y="50">MessageList</tspan>
+                </text>
+            </g>
+            <g id="Group-2" transform="translate(60.000000, 100.000000)">
+                <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="0 0 0 260 50 260"></polyline>
+                <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="0 0 0 60 50 60"></polyline>
+                <g id="Group" transform="translate(100.000000, 100.000000)">
+                    <g id="Compo" transform="translate(50.000000, 20.000000)">
+                        <rect id="Rectangle" fill="#FDA639" x="0" y="0" width="260" height="80" rx="6"></rect>
+                        <text id="Button" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                            <tspan x="85.4082019" y="50">Button</tspan>
+                        </text>
+                    </g>
+                    <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="0 0 0 60 50 60"></polyline>
+                </g>
+                <g id="Group" transform="translate(100.000000, 300.000000)">
+                    <g id="Compo" transform="translate(50.000000, 20.000000)">
+                        <rect id="Rectangle" fill="#FDA639" x="0" y="0" width="260" height="80" rx="6"></rect>
+                        <text id="Button" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                            <tspan x="85.4082019" y="50">Button</tspan>
+                        </text>
+                    </g>
+                    <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="0 0 0 60 50 60"></polyline>
+                </g>
+            </g>
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Combined-Shape"></g>
+                <polyline id="Path-2" stroke="#1B277C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="180 90 180 440 230 440"></polyline>
+            </g>
+            <g id="Messages" transform="translate(110.000000, 120.000000)">
+                <g id="Compo" transform="translate(0.000000, 200.000000)">
+                    <rect id="Rectangle" fill="#48A7F2" x="0" y="0" width="260" height="80" rx="6"></rect>
+                    <text id="Message" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                        <tspan x="68.2172837" y="50">Message</tspan>
+                    </text>
+                </g>
+                <g id="Compo">
+                    <rect id="Rectangle" fill="#48A7F2" x="0" y="0" width="260" height="80" rx="6"></rect>
+                    <text id="Message" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                        <tspan x="68.2172837" y="50">Message</tspan>
+                    </text>
+                </g>
+            </g>
+            <polyline id="Path-3" stroke="#F1453D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" points="490 120 110 120 110 300 490 300"></polyline>
+            <polyline id="Path-3" stroke="#F1453D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" points="490 320 110 320 110 500 490 500"></polyline>
+        </g>
+    </g>
+</svg>

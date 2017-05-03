@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="490px" height="520px" viewBox="0 0 490 520" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>0-Basic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0-Basic">
+            <g id="Compo" transform="translate(20.000000, 20.000000)">
+                <rect id="Rectangle" fill="#ED5454" x="0" y="0" width="300" height="80" rx="6"></rect>
+                <text id="MessageList" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                    <tspan x="62.3715797" y="50">MessageList</tspan>
+                </text>
+            </g>
+            <g id="Group-2" transform="translate(60.000000, 100.000000)">
+                <g id="Group" transform="translate(50.000000, 20.000000)">
+                    <g id="Compo">
+                        <rect id="Rectangle" fill="#48A7F2" x="0" y="0" width="260" height="80" rx="6"></rect>
+                        <text id="Message" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                            <tspan x="68.2172837" y="50">Message</tspan>
+                        </text>
+                    </g>
+                    <g id="Compo" transform="translate(100.000000, 100.000000)">
+                        <rect id="Rectangle" fill="#FDA639" x="0" y="0" width="260" height="80" rx="6"></rect>
+                        <text id="Button" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                            <tspan x="85.4082019" y="50">Button</tspan>
+                        </text>
+                    </g>
+                    <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="50 80 50 140 100 140"></polyline>
+                </g>
+                <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="50 260 0 260 0 0"></polyline>
+                <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="50 60 0 60 0 0"></polyline>
+                <g id="Group" transform="translate(50.000000, 220.000000)">
+                    <g id="Compo">
+                        <rect id="Rectangle" fill="#48A7F2" x="0" y="0" width="260" height="80" rx="6"></rect>
+                        <text id="Message" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                            <tspan x="68.2172837" y="50">Message</tspan>
+                        </text>
+                    </g>
+                    <g id="Compo" transform="translate(100.000000, 100.000000)">
+                        <rect id="Rectangle" fill="#FDA639" x="0" y="0" width="260" height="80" rx="6"></rect>
+                        <text id="Button" font-family="Roboto-Regular, Roboto" font-size="30" font-weight="normal" letter-spacing="0.500000417" fill="#FFFFFF">
+                            <tspan x="85.4082019" y="50">Button</tspan>
+                        </text>
+                    </g>
+                    <polyline id="Line" stroke="#BDBDBD" stroke-width="6" stroke-linejoin="round" points="50 80 50 140 100 140"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

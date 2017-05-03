@@ -29,15 +29,16 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
-
 const images = {
-  twitter: require("../assets/twitter.png"),
   gobelins: require("../assets/gobelins.svg"),
   realytics: require("../assets/realytics.svg"),
   realyticsColor: require("../assets/realytics-color.svg"),
   magic: require("../assets/magic.gif"),
-  context1: require("../assets/context-1.png"),
-  context2: require("../assets/context-2.png")
+  illu0: require("../assets/0-Basic.svg"),
+  illu1: require("../assets/1-Props.svg"),
+  illu2: require("../assets/2-Context.svg"),
+  illu3: require("../assets/3-Context-SCU.svg"),
+  illu4: require("../assets/4-Store.svg")
 };
 
 preloader(images);
@@ -69,9 +70,12 @@ export default class Presentation extends React.Component {
           <Text margin="10px 0 0" textColor="quartenary" size={2}>
             Meetup React &amp; React Naive
           </Text>
-          <Heading size={4} caps textColor="secondary" margin="100px 0 0 0">
+          <Heading size={4} caps textColor="secondary" margin="30px 0 0 0">
             <Image src={images.realyticsColor} width="50%" />
           </Heading>
+          <Link textSize={20} href="http://layoutbox-talk.surge.sh/">
+            http://layoutbox-talk.surge.sh/
+          </Link>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="primary" margin={50} caps>About Me</Heading>
@@ -131,6 +135,15 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.illu0} fit bgColor="white" style={{ borderRadius: 10 }} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.illu1} fit bgColor="white" style={{ borderRadius: 10 }} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <Image src={images.illu2} fit bgColor="white" style={{ borderRadius: 10 }} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
           <Heading size={3} margin={50} textColor="primary">Warning ⚠️</Heading>
           <Appear>
             <Text margin={50} textColor="secondary" lineHeight={1.3}>
@@ -145,18 +158,16 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
-          <Image src={images.context1} fit />
-          <Text style={{ fontSize: "2rem" }}>Crédit @mweststrate</Text>
+          <Image src={images.illu3} fit bgColor="white" style={{ borderRadius: 10 }} />
         </Slide>
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
-          <Heading size={3} margin={50} textColor="tertiary" fit>Context + Store = 🎉</Heading>
+          <Heading size={3} margin={50} textColor="tertiary">Context + Store = 🎉</Heading>
           <Appear>
             <Heading size={5} margin={50} textColor="secondary" caps>Very short demo ®</Heading>
           </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
-          <Image src={images.context2} fit />
-          <Text style={{ fontSize: "2rem" }}>Crédit @mweststrate</Text>
+          <Image src={images.illu4} fit bgColor="white" style={{ borderRadius: 10 }} />
         </Slide>
         <Slide transition={["slide", "fade"]} bgColor="primary" textColor="primary">
           <Heading size={3} margin={50} textColor="tertiary" fit>Layout Box</Heading>
@@ -207,6 +218,11 @@ export default class Presentation extends React.Component {
           <Heading size={4} textColor="secondary">
             Questions ?
           </Heading>
+          <div style={{ marginTop: 50 }}>
+            <Link textSize={20} href="http://layoutbox-talk.surge.sh/">
+              http://layoutbox-talk.surge.sh/
+            </Link>
+          </div>
         </Slide>
       </Deck>
     );
